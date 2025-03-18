@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        //type 1
+        /*
+        let empnames=["pooja","raj","joel","rohit"]
+        console.log(empnames,typeof(empnames));
+        let a=[]
+        console.log(a,typeof(a));
+        a.push("aa")
+        console.log(a);
+        empnames.push("bb")
+        console.log(empnames)
+        a.unshift("varsha ")
+        console.log(empnames);
+        x=[]
+        x[6]="red"
+        console.log(x);
+        x[3]="white"
+        console.log(x)
+        console.log(empnames[2]);
+        // removeing
+        empnames.pop()
+        console.log(empnames);
+        empnames.shift()
+        console.log(empnames);
+        */
+        // 2nd type 
+
+        let colors=new Array();
+        colors[0]='red'
+        colors.push("green")
+        colors.unshift("blue")
+        console.log(colors);
+        //traversing array element type-2 via for  in
+
+        for(let i=0;i<colors.length;i++)
+    {
+        console.log(colors[i]);
+        
+    }
+    for(i in colors)
+    {
+        console.log(i,colors[i]);
+        
+    }
+ //traversing array element type-2 via for  of
+
+    for(i of colors)
+    {
+        console.log(i);
+        
+    }
+
+ //traversing array element type-2 via foreach
+ colors.forEach(i=>{
+    console.log(i);
+    
+ })
+
+
+
+        
+        
+    </script>
+</body>
+</html>
