@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo2</title>
+</head>
+<body>
+    <script>
+        let empdata={
+            name:"raj",
+            jobrole:"devloper",
+            salary:6000,
+        }
+        for(let element in empdata)
+        {
+            console.log(empdata[element]);
+            
+        }
+        empdata.city='delhi'
+        for(let element in empdata)
+        {
+            console.log(empdata[element]);
+            
+        }
+        let colors={}
+        colors.first="red"
+        colors.second="green"
+        console.log(colors);
+// ------------------------------------------------
+        empdata.data=function()
+        {
+            return this.name+" "+this.salary
+        }
+        
+        
+    </script>
+    
+</body>
+</html>
