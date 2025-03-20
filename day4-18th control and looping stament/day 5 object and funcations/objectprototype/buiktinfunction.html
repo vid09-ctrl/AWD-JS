@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buitinfunction</title>
+</head>
+<body>
+    <script>
+        //call(),apply(),bind)
+        /*let studend={
+            fname:'raj',
+            lname:'kumar',
+            fullname:function()
+            {
+                return this.fname+" "+this.lname
+            }
+        }
+        console.log(studend.fullname());
+
+        let s1={fname:'pooja',lname:'shinde'}
+        let s2={fname:'sayli',lname:'thombre'}
+        console.log(studend.fullname.call(s1));//reads argument as seperately
+        console.log(studend.fullname.apply(s2));//read the argument as array
+        console.log(studend.fullname.bind(s2));//borrowing given object elememts
+        */
+       function test1(args1,args2)
+       {
+        console.log('test:',this.num,args1,args2);
+        
+       }
+       test1.call({num:100},12,13)
+
+       function test2(...args)
+       {
+        console.log('test2:',this.num,args);
+       }
+       test2.apply({num:100},[10,12,322,321])
+
+
+       function test3(args)
+       {
+        console.log('test3:',this.num,args);
+        
+       }
+       let ans=test3.bind({num:100},101)
+       console.log(ans());
+       
+
+
+
+        
+        
+    </script>
+</body>
+</html>
